@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 import './header.styles.scss';
-
-const Logo = require('../../assets/logo.png');
 
 const Header = () => (
 	<div className="header">
 		<Link className="logo-container" to="/">
-			<img src={Logo} alt="logo" className="logo" />
+			<img src={logo} alt="logo" className="logo" />
 		</Link>
 		<div className="options">
 			<Link className="option" to="/shop">
